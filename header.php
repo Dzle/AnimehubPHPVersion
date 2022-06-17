@@ -94,14 +94,18 @@
     }
 </style>
 
-<!------xinyuu------>
+<!------xinyuu design------>
 <div id="bg">
   <div class="nav-mask">
     
-    <a href="upload/upload.php" target="_blank" class="u-link"> 投稿 </a></div>
+    <a href="upload.php" target="_blank" class="u-link"> 投稿 </a></div>
   <div class="logo">
     <h1 class="logol">Anime</h1><div class="logor">
     <h1>Hub</h1>
   </div></div>
 </div>
-<div id="tip"><?php $sid= session_start();   echo"站点目前正在使用的SESSION文件数共:".$sid."个。"; ?></div>
+<div id="tip"><?php $sid= session_start();echo"站点目前正在使用的SESSION文件数共:".$sid."个。"; ?></div>
+<?php
+if (!$_SESSION['user']) {
+    header("Location: login.php");
+}

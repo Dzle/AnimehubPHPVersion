@@ -1,5 +1,5 @@
 <?php
-require_once"../header.php";
+require_once "header.php";
 
 $dest = 'uploads/'. $_FILES['userfile'] ['name'];
 if (is_uploaded_file($_FILES['userfile']['tmp_name'])){
