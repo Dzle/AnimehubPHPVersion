@@ -17,6 +17,12 @@
 
     <input type="Submit" name="Submit" value="注册"/ class="button">
 <p>已有账号？立即<a href="login.php">登录</a></p>
+    <p class="subrule">注册或登录即代表您知晓并同意：<br>
+        <a href="#" class="subrule">《萌动星空社区使用规则》</a><br>
+        <a href="#" class="subrule">《ANIMEHUB社区行为守则》</a><br>
+        <a href="#" class="subrule">《第三方站点资源引用免责声明及作品侵权投诉需知》</a></p>
+
 </form></div></div>
 
 </div>
+<!------xinyuu design------>

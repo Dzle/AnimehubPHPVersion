@@ -97,15 +97,22 @@
 <!------xinyuu design------>
 <div id="bg">
   <div class="nav-mask">
-    
-    <a href="upload.php" target="_blank" class="u-link"> 投稿 </a></div>
+
+      <?php
+      $sid= session_start();
+      $username = @$_SESSION["user"];
+      echo"<a href='userspace.php' class='u-link'>$username</a>";
+
+      ?></div>
   <div class="logo">
     <h1 class="logol">Anime</h1><div class="logor">
     <h1>Hub</h1>
   </div></div>
 </div>
-<div id="tip"><?php $sid= session_start();echo"站点目前正在使用的SESSION文件数共:".$sid."个。"; ?></div>
+<!------xinyuu design------>
+<div id="tip"><?php echo"版本号20220518，调试模式，站点目前正在使用的SESSION文件数共:".$sid."个。"; ?></div>
 <?php
-if (!$_SESSION['user']) {
-    header("Location: login.php");
+//开启全站session获取用户登录状态，没有登录的用户跳转到login登录
+if (!$_SESSION['uid']) {
+    @header("Location: login.php");
 }

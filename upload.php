@@ -1,3 +1,4 @@
+<?php require_once "header.php";?>
 <!doctype html>
 <html>
 <head>
@@ -18,8 +19,7 @@
 </head>
 <body>
 
-<?php require_once "header.php";
-?>
+
 
 <div id="body">
 
@@ -41,3 +41,4 @@
 </body>
 	
 </html>
+<!------xinyuu design------>

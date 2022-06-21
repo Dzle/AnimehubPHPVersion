@@ -13,8 +13,12 @@
 
     <p class="subt">密码<p class="subs">Password</p><input type="password" name="password" / class="inputstyle"></p>
     <br />
-    <input type="submit" name="submit" value="登陆" / class="button">
-    或<a href="register.php" class="">注册</a><p>注册或登录即代表您同意《萌动星空社区账号使用规则》</p>
+    <input type="submit" name="submit" value="登录" / class="button">
+    <p>还没有账号？您或许需要<a href="register.php" class="">注册</a>一个！</p>
+    <p class="subrule">注册或登录即代表您知晓并同意：<br>
+        <a href="#" class="subrule">《萌动星空社区使用规则》</a><br>
+        <a href="#" class="subrule">《ANIMEHUB社区行为守则》</a><br>
+        <a href="#" class="subrule">《第三方站点资源引用免责声明及作品侵权投诉需知》</a></p>
 
 
 
@@ -23,3 +27,5 @@
 </div>
     
 </div>
+<?php require_once"conys.html"?>
+<!------xinyuu design------>

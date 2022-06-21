@@ -14,9 +14,10 @@ if($use == "" || $psw == ""){
         echo "正在记录...<br>";
     }
 
-    $sql = "INSERT INTO users (user,pswd) VALUES('$use','$psw')";;
+    $sql = "INSERT INTO users (user,pswd) VALUES('$use','$psw')";
     if (mysqli_query($con, "$sql")) {
-        echo "infoII.:递交成功，注册完毕(*^▽^*)！请 <a href='login.php'>立即登录</a>";
+        echo "infoII.:递交成功，注册完毕(*^▽^*)！请 <a href='login.php'>立即登录</a>";//备用入口，如浏览器无响应则提示用户手动进入登录界面
+        //主入口，浏览器自动跳转
         header("Location: login.php");
     } else {
         echo "infoII.:写入数据库失败,。。。(；д；) ：用户名已被占用或数据不合法";
@@ -24,3 +25,5 @@ if($use == "" || $psw == ""){
 
     }
 }
+//没有记录功能SESSION
+//<!------xinyuu design------>

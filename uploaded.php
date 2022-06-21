@@ -11,3 +11,4 @@ if (is_uploaded_file($_FILES['userfile']['tmp_name'])){
 	
 	}
 ?>
+<!------xinyuu design------>

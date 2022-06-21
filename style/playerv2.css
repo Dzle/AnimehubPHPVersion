@@ -1,0 +1,165 @@
+@charset "utf-8";
+/* CSS Document */
+		*{
+			padding: 0px;
+			margin: 0px;}
+	.head {
+	height: 50px;
+	width: auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+    .head li {
+	line-height: 50px;
+	display: block;
+	width: 55px;
+	float: left;
+	text-align: center;
+	margin-right: 5px;
+	list-style-type: none;
+}
+    .player_top {
+	margin-bottom: 20px;
+	margin-top: 20px;
+	width: 75%;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+.player_top .bangumi_id .video_class {
+	height: 25px;
+	width: auto;
+	float: left;
+	display: block;
+	line-height: 25px;
+	text-align: center;
+	background-color: #FF6699;
+	margin-top: 12.5px;
+	color: #FFFFFF;
+	border-radius:3px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+    .bangumi_id {
+	display: block;
+	height: 50px;
+	width: auto;
+}
+    .player_top .bangumi_id .bangumi_name {
+	line-height: 50px;
+	float: left;
+	display: block;
+	font-weight: bolder;
+	font-size: 25px;
+	width: auto;
+}
+    .player_top .player {
+	height: auto;
+	width: auto;
+	margin-top: 20px;
+}
+.player_top .bangumi_pod {
+	width: 100%;
+	height: auto;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+    .player_top .bangumi_pod .bangumi_podlist {
+	color:#000000;
+	height: 50px;
+	width: 100px;
+	padding: 5px;
+	display: block;
+	text-decoration: none;
+	line-height: 50px;
+	font-size: 12px;
+	text-align: center;
+	margin-top: 5px;
+	margin-right: 15px;
+	float: left;
+	border-radius:13px;
+}
+	.player_top .bangumi_pod a:hover{
+	background: #00ccff;
+	color: #FFF
+}
+	.pod_flag{
+		line-height: 50px;
+	display: block;
+	font-weight: bolder;
+	font-size: 30px;
+	width: auto;
+	}
+
+@media (max-width: 1080px){
+	.head{
+		height: 100px;
+	}
+	.head li {
+	line-height: 100px;
+	display: block;
+	width: 100px;
+	float: left;
+	text-align: center;
+	margin-right: 10px;
+	list-style-type: none;
+	font-size: 30px;
+}
+	    .player_top {
+	margin-bottom: 20px;
+	margin-top: 20px;
+	width: 100%;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+}.player_top .bangumi_pod {
+	width: 100%;
+	height: auto;
+	margin-top: 30px;
+	margin-right: auto;
+	margin-left: auto;
+}
+	
+	    .player_top .bangumi_pod .bangumi_podlist {
+	color:#000000;
+	height: 150px;
+	width: 30%;
+	padding: 5px;
+	display: block;
+	text-decoration: none;
+	line-height: 150px;
+	font-size: 30px;
+	text-align: center;
+	margin-top: 5px;
+	margin-right: 15px;
+	float: left;
+	border-radius:13px;
+}
+	.pod_flag{
+		line-height: 50px;
+	display: block;
+	font-weight: bolder;
+	font-size: 30px;
+	width: auto;
+		margin-left: 100px;
+	}
+}
+
+@media (max-width: 766px){
+	.player_top .bangumi_pod .bangumi_podlist {
+	color:#000000;
+	height: 150px;
+	width: 20%;
+	padding: 5px;
+	display: block;
+	text-decoration: none;
+	line-height: 150px;
+	font-size: 30px;
+	text-align: center;
+	margin-top: 5px;
+	margin-right: 15px;
+	float: left;
+	border-radius:13px;
+}
+}

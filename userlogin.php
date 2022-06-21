@@ -2,7 +2,7 @@
 //require_once"header.php";
 $use = $_POST['username'];
 $pass = $_POST['password'];
-if($use == "" || $pass == "")
+if($use == "" || $pass == "")//判断用户名和密码是否为空
 
 {
 
@@ -29,12 +29,13 @@ if($use == "" || $pass == "")
         $uid = "SELECT*FROM users WHERE user ='$use'";
         foreach (mysqli_query($sqlit,$uid) as $row){
         echo"infoII.:欢迎回来，".$row[0];
-//记录session
+//记录session，
         session_start();
         $_SESSION["user"] = $use;
         $_SESSION["password"] = $pass;
         $_SESSION["uid"] =$row['uid'];
             $getuid = $row['uid'];
+            //备用入口，如果浏览器无响应则提示用户手动跳转
         echo"infoIII.:SESSION已记录您的登录信息您的UID为$getuid<br>正在跳转至首页。。如无响应请<a href='index.php'>手动跳转至首页</a>";
         header("Location: index.php");
         }
@@ -44,3 +45,4 @@ if($use == "" || $pass == "")
 
     }
 }
+//<!------xinyuu design------>

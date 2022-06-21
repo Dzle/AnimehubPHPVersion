@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+
+.spacebody {
+	height: 100%;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+}
+.spaceheader {
+	height: 150px;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.userinfo {
+	width: 20%;
+	height: 130px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.userleft {
+	height: 130px;
+	width: 50%;
+	float: left;
+	border-radius:30px;
+}
+.userleftimg {
+	height: 120px;
+	width: 90%;
+	float: left;
+	border-radius:110px;
+}
+.userright {
+	float: left;
+	height: 130px;
+	width: 50%;
+}
+.username {
+	font-size: 15px;
+	line-height: 30px;
+	height: 30px;
+	width: 100%;
+	text-align: left;
+	margin-top: 45px;
+}
+.uid {
+	font-size: 10px;
+	color: #999;
+	display: block;
+	text-align: left;
+	line-height: 15px;
+}
